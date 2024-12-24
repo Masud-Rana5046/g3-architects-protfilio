@@ -3,7 +3,14 @@
 }
 /*Share3 style*/
 .btn-primary{
-    
+    border-radius: 5px;
+    background: #ff900f;
+    margin: 20px 25px ;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+
 }
 header{
 background: rgb(255, 144, 14, 0.14);
@@ -47,3 +54,57 @@ nav li a{
     color: #727272;
 
 }
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/*Banner image responsive*/
+@media screen and (Max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+nav{
+    flex-direction: column;
+}    
+    
+}
+
+/* Main style*/
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.tems-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.tems-title{
+    font-size: 2.8rem;
+}
+.tems-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.tems-title .text-features{
+    color: #ff900f;
+    font-weight: 700;
+}
+.tems-title
