@@ -12,6 +12,18 @@
     cursor: pointer;
 
 }
+.description-light-gry{
+    color: #727272;
+
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+/*Header style*/
 header{
 background: rgb(255, 144, 14, 0.14);
 padding: 50px 240px;
@@ -33,11 +45,7 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
-.nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
-}
+
 /*banner style*/
 .banner-content{
     max-width: 800px;
@@ -48,35 +56,10 @@ nav li a{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
-
-}
-.banner-desription{
-    color: #727272;
-
 }
 .banner img{
     margin-top: 20px;
-    width: 100%;
-}
-/*Banner image responsive*/
-@media screen and (Max-width: 576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* for tablet */
-@media screen and (min-width: 576px) and (max-width: 960px){
-    header{
-        padding: 50px;
-    }
-nav{
-    flex-direction: column;
-}    
-    
-}
+    width: 100%}
 
 /* Main style*/
 main{
@@ -100,7 +83,7 @@ main{
     font-size: 2.8rem;
 }
 .tems-title .quick-list{
-    color: #727272;
+
     font-weight: 500;
 }
 .tems-title .text-features{
@@ -108,3 +91,32 @@ main{
     font-weight: 700;
 }
 .tems-title
+
+/*Banner image responsive*/
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav,
+     .team-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+    }
+    .tems-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+nav, .team-container{
+    flex-direction: column;
+}    
+    
+}
