@@ -168,6 +168,19 @@ justify-content: space-around;
 .Sponors-img-container img{
     width: 165px;
 }
+
+.footer{
+    margin-top: 100px;
+    background: #fff4e7;
+    width: 100%;
+    height: 50px;
+}
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 18px;
+    font-weight: 500;
+}
 /*Banner image responsive*/
 @media screen and (max-width: 576px) {
     header{
