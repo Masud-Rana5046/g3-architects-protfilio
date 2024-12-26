@@ -90,6 +90,47 @@ main{
     color: #ff900f;
     font-weight: 700;
 }
+
+/* featured section style*/
+.featured{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+
+}
+.featured-content .card{
+    padding: 20px;
+    margin-bottom: 20px;
+border-radius: 8px;
+background: #fff;
+box-shadow: 0px 30px 40px 0px rgb(0, 0, 0, .06);
+}
+.featured .section-title{
+    border-left: 5px solid #ff900f;
+    padding-left: 20px;
+}
+.featured-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+.ten-years{
+    border-radius: 8px;
+    background: #ff900f;
+    color: #fff;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years p{
+    font-size: 1.5rem;
+    
+}
 /*Facts Section*/
 .facts-ard-container{
 display: flex;
@@ -134,6 +175,7 @@ justify-content: space-around;
     }
     nav,
      .team-container,
+     .featured,
      .facts-ard-container,
      .Sponors-img-container
      {
@@ -147,6 +189,15 @@ justify-content: space-around;
         padding-left: 20px;
         padding-right: 20px;
     }
+    .featured-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .ten-years{
+        position: static;
+        width: 300px;
+    }
+
     .facts-ard-container{
         gap: 20px;
     }
@@ -158,9 +209,11 @@ justify-content: space-around;
     header{
         padding: 50px;
     }
-nav, .team-container, .Sponors-img-container
-{
+    nav, 
+    .team-container,
+    .featured,
+    .Sponors-img-container
+    {
     flex-direction: column;
-}    
-    
-}
+    }    
+}   
